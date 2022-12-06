@@ -1,0 +1,58 @@
+/* header*/
+
+.navi-link[href="./portfolio.html"]{
+    color: var(--accent-color);
+}
+
+
+
+/* піздніше приберемо .working > h1 з допомогою scc
+
+.working > h1{
+    
+} */
+
+.working > ul{
+    list-style-type: none;
+} 
+
+.working .filters{
+    font-family:inherit;
+
+    cursor: pointer;
+
+    background-color: var(--team-beckground-color);
+    color: var(--titel-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.working button:hover, .working button:focus{
+    background-color: var(--accent-color);
+    color: var(--hero-footer-text-color);
+}
+
+.working-titel{
+    color: var(--titel-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.working-text{
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+}
+
+.working a{
+    text-decoration: none;
+}
