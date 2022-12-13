@@ -46,25 +46,23 @@ h1, h2, h3, h4, h5, h6, ul, li, p{
 }
 
 .conteiner.hero{
-    width: 1600px;
-    height: 600px;
     background-color: var(--hero-footer-beckground-color);
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.conteiner.main.first{
-    padding-top: 94px;
-}
-
-.conteiner.main{
-    padding-bottom: 94px;
 }
 
 .conteiner.footer{
     text-align-last: left;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.section.features{
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 /* logo */
@@ -100,15 +98,12 @@ footer .end-logo{
 
 .box-header{
     display: flex;
+    align-items: center;
+    height: 80px;
 }
 
 header .logo{
     margin-right: 93px;
-}
-
-header .logo{
-    margin-top: 24px;
-    margin-bottom: 25px;
 }
 
 header{
@@ -122,9 +117,6 @@ header{
 
 .navi{
     display: flex;
-
-    margin-top: 32px;
-    margin-bottom: 32px;
 
     list-style-type: none;
 }
@@ -154,18 +146,15 @@ header .navi > li:last-child{
     margin-left: auto;
 }
 
-.head-mail{
-    margin-right: 50px;
-}
-
 .head-mail, .head-tel{
     display: inline-block;
 
-    margin-top: 32px;
-    margin-bottom: 32px;
-
     color: var(--text-color);
     text-decoration: none;
+}
+
+.head-mail{
+    margin-right: 50px;
 }
 
 
@@ -179,10 +168,6 @@ header .navi > li:last-child{
 }
 
 /* hero */
-
-.hero{
-    background-color: var(--features-beckgraund-color)
-}
 
 .hero h1{
     width: 696px;
@@ -219,15 +204,15 @@ header .navi > li:last-child{
 
 /* features */
 
-.features-list > .box{
+.features-list.box{
     display: flex;
 }
 
-.features-list > .box > li{
+.features-list.box > li{
     margin-right: 30px;
 }
 
-.features-list > .box > li:last-child{
+.features-list.box > li:last-child{
     margin-right: 0;
 }
 
@@ -283,6 +268,10 @@ header .navi > li:last-child{
     list-style-type: none;
 }
 
+.about-list:last-child{
+    margin-right: 0;
+}
+
 .about-titel{
     margin-bottom: 50px;
 
@@ -298,10 +287,11 @@ header .navi > li:last-child{
 
 .box.team-list{
     display: flex;
+    margin: -15px;
+    flex-wrap: wrap;
 }
 
 .team{
-    padding-top: 94px;
     background-color: var(--team-beckground-color);
 }
 
@@ -310,17 +300,13 @@ header .navi > li:last-child{
 }
 
 .team-list-person{
-    margin-right: 30px; 
+    margin: 15px; 
 
     background-color: var(--header-beckground-color);
     width: 270px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     min-height: 368px;
-}
-
-.team-list-person:last-child{
-    margin-right: 0;
 }
 
 .team-titel{

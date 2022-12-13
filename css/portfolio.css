@@ -19,11 +19,6 @@
     list-style-type: none;
 } 
 
-.working{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .box-filters{
     display: inline-flex;
     margin-left: auto;
