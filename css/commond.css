@@ -46,7 +46,8 @@ h1, h2, h3, h4, h5, h6, ul, li, p{
 }
 
 .conteiner.hero{
-    background-color: var(--hero-footer-beckground-color);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .conteiner.footer{
@@ -99,7 +100,9 @@ footer .end-logo{
 .box-header{
     display: flex;
     align-items: center;
-    height: 80px;
+
+    padding-top: 24px;
+    padding-bottom: 25px;    
 }
 
 header .logo{
@@ -141,6 +144,10 @@ header .navi > li:last-child{
     color:var(--accent-color)
 }
 
+.navi-link[href="./index.html"]{
+    color:var(--accent-color)
+}
+
 .contacts-header{
     display: flex;
     margin-left: auto;
@@ -163,11 +170,11 @@ header .navi > li:last-child{
     color: var(--accent-color);
 }
 
-.navi-link[href="./index.html"]{
-    color: var(--accent-color);
-}
-
 /* hero */
+
+.hero.section{
+    background-color: var(--hero-footer-beckground-color);
+}
 
 .hero h1{
     width: 696px;
@@ -301,6 +308,7 @@ header .navi > li:last-child{
 
 .team-list-person{
     margin: 15px; 
+    padding-bottom: 30px;
 
     background-color: var(--header-beckground-color);
     width: 270px;
@@ -331,8 +339,6 @@ header .navi > li:last-child{
 }
 
 .team-text{
-    margin-bottom: 30px;
-
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
@@ -386,4 +392,128 @@ footer .link{
 .footer-address:hover, .footer-address:focus,
 .footer-mail-tel:hover, .footer-mail-tel:focus{
     color: var(--accent-color);
+}
+
+
+
+
+/* PORTFOLIO */
+
+/* header*/
+
+.navi-link.studia{
+    color: var(--titel-text-color);
+}
+
+.navi-link.portfolio{
+    color: var(--accent-color);
+}
+
+
+/* піздніше приберемо .working > h1 з допомогою scc
+
+.working > h1{
+    
+} */
+
+.working ul{
+    list-style-type: none;
+} 
+
+.box-filters{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 34px;
+}
+
+.box-filters > li{
+    display: block;
+    margin-right: 8px;
+
+}
+
+.box-filters > li:last-child{
+    margin-right: 0;
+}
+
+.working img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.working .filters{
+    display: block;
+
+    font-family:inherit;
+    
+    padding: 6px 22px;
+    min-width: 73px;
+
+    cursor: pointer;
+
+    border-radius: 4px;
+    border-color: transparent;
+
+    background-color: var(--team-beckground-color);
+    color: var(--titel-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.working button:hover, .working button:focus{
+    background-color: var(--accent-color);
+    color: var(--hero-footer-text-color);
+}
+
+.working-titel{
+    text-align-last: left;
+    margin-bottom: 4px;
+
+    color: var(--titel-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+}
+
+.working-text{
+    text-align-last: left;
+
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+
+}
+
+.box-working{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.box-working > li{
+    margin: 15px;
+}
+
+.person{
+    width: 370px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 20px 24px;
+}
+
+.working a{
+    text-decoration: none;
 }
